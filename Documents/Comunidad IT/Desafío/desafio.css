@@ -1,0 +1,435 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*------- PANTALLA DE INICIO ------*/
+
+#pantallaInicio{
+    height: 736px;
+    width: 414px;
+    /*background-color: blueviolet; */
+}
+
+#logoTruco{
+    width: 100%;
+    height: 16.66%;
+    background-color: #F9C2B3;
+}
+
+#logoTruco>img{
+    width: 100%;
+}
+
+#equipo1{
+    width: 100%;
+    height: 16.66%;
+    background-color: #F9C2B3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#equipo2{
+    width: 100%;
+    height: 16.66%;
+    background-color:  #F9C2B3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputEquipo{
+    width: 75%;
+    height: 30%;
+    line-height: 25%;
+    font-size: 1em;
+    border: solid 1px gray;
+    text-align: center;
+}
+
+
+.selectorPartida{
+    width: 100%;
+    height: 16.66%;
+    background-color:  #F9C2B3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selectorPartida>input{
+    height: 2rem;
+    width: 11rem;
+    border-radius: 30px;
+    border: none;
+}
+
+.botonActivo{
+    background-color: #C46970;
+    
+}
+
+.botonInactivo{
+    background-color:#C46970;
+    opacity: 0.5;
+}
+
+
+#selectorEstilo{
+    width: 100%;
+    height: 16.66%;
+    background-color:  #F9C2B3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#selectorEstilo>input{
+    height: 2rem;
+    width: 11rem;
+    border-radius: 30px;
+    border: none;
+}
+
+#botonInicio{
+    width: 100%;
+    height: 16.66%;
+    background-color: #F9C2B3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#botonInicio>input{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #68A597;
+    color: #DCE398;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manito{
+    cursor: pointer;
+}
+
+/*----- PANTALLA DE PARTIDA ------*/
+
+#pantallaPartida{
+    height: 736px;
+    width: 414px;
+    display: none;
+}
+
+/*------- DIV 1 -------*/
+
+#div1{
+    background-color: #F9C2B3;
+    width: 100%;
+    height: 10%;
+    display: flex;
+
+}
+
+#div1Izquierdo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*background-color: peru;*/
+    width: 50%;
+    height: 100%;
+}
+
+#div1Derecho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*background-color: grey;*/
+    width: 50%;
+    height: 100%;
+}
+
+.cambioDePuntos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*background-color: lime;*/
+    width: 15%;
+    height: 100%;
+    text-align: center;
+}
+
+.botonMas, .botonMenos{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #C46970;
+    color: #DCE398;
+    font-size: 1.2rem;
+}
+
+#div1Izquierdo>.cambioDePuntos{
+    align-items: flex-end;
+}
+
+#div1Derecho>.cambioDePuntos{
+    align-items: flex-start;
+}
+
+.nombreEquipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*background-color: maroon;*/
+    width: 85%;
+    height: 100%;
+}
+
+
+/*------- DIV 2 ------*/
+
+#div2{
+    background-color: #68A597;
+    width: 100%;
+    height: 37.5%;
+    display: flex;
+}
+
+#div2Izquierdo{
+    /*background-color: paleturquoise;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-right: solid 2px white;
+}
+
+#div2Izquierdo > img{
+    height: 20%;
+}
+
+#div2Derecho{
+    /*background-color: blue;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#div2Derecho > img{
+    height: 20%;
+}
+
+/*------- DIV 3 ------*/
+
+#div3{
+    background-color: #68A597;
+    width: 100%;
+    height: 37.5%;
+    display: flex;
+    border-top: solid 2px white;
+}
+
+#div3Izquierdo{
+    /*background-color: lightseagreen;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-right: solid 2px white;
+}
+
+#div3Izquierdo > img{
+    height: 20%;
+}
+
+#div3Derecho{
+   /* background-color: lightpink;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#div3Derecho > img{
+    height: 20%;
+}
+
+/*------- DIV 4 ------*/
+
+#div4{
+    background-color: #C46970;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+
+/*------- DIV 5 ------*/
+
+#div5{
+    background-color: #F9C2B3;
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+#puntajeIzquierdo{
+    width: 40%;
+    /*background-color: cadetblue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+#puntajeDerecho{
+    width: 40%;
+    /*background-color: darkolivegreen;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+
+}
+
+#botonFin{
+    width: 20%;
+    /*background-color: #F9C2B3;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonFin>input{
+    background-color: #68A597;
+    color: #DCE398;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border:none;
+    font-size: 1rem;
+}
+
+/*----- PANTALLA FIN DE LA PARTIDA -----*/
+
+#pantallaFin{
+    height: 736px;
+    width: 414px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#ventana{
+    width: 75%;
+    height: 20%;
+    background-color: #F9C2B3;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+#ventanaSuperior{
+    width: 100%;
+    height: 50%;
+    /*background-color: pink;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    
+}
+
+#ventanaInferior{
+    width: 100%;
+    height: 50%;
+    /*background-color: lightskyblue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+#reiniciarPartida, #nuevaPartida{
+    background-color: #C46970;
+    border-radius: 30px;
+    border: none;
+    width: 40%;
+    height: 30%;
+    font-weight: bold;
+}
+
+.estiloGalactico{
+    background-image: url('img/fondoGalactico.jpg');
+    background-size: contain;
+    background-position-y: -50px;
+}
+
+.iluminacionGalactica{
+-webkit-box-shadow: 0px 18px 18px -6px rgba(255,255,255,0.64);
+-moz-box-shadow: 0px 18px 18px -6px rgba(255,255,255,0.64);
+box-shadow: 0px 18px 18px -6px rgba(255,255,255,0.64);
+}

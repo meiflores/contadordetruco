@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotador de truco</title>
+    <link rel="stylesheet" href="desafio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="desafio.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="pantallaInicio">
+        <div id="logoTruco">
+            <img src="img/logoTruco.png" alt="Logo anotador de truco">
+        </div>
+        <div id="equipo1">
+            <input placeholder="Nombre del equipo 1" class="inputEquipo"><br>
+        </div>
+        <div id="equipo2" >
+            <input placeholder="Nombre del equipo 2" class="inputEquipo"><br>
+        </div>
+        <div class="selectorPartida">
+            <input type="button" id='botonA24' class='botonInactivo manito' value="A 24 puntos"> 
+            <input type="button" id='botonA30' class='botonActivo' value="A 30 puntos">
+        </div>
+        <div id="selectorEstilo">
+            <input type="button" id="botonClasico" class="botonActivo" value="Estilo clásico"> 
+            <input type="button" id="botonGalactico" class="botonInactivo manito" value="Estilo galáctico">
+        </div>
+        <div id="botonInicio">
+            <input type="button" value="INICIAR" class="manito">
+        </div>          
+    </div>
+    <div id="pantallaPartida">
+        <div id="div1">
+            <div id="div1Izquierdo">
+                <div class="cambioDePuntos">
+                    <div class="botonMas manito">+</div>
+                    <div class="botonMenos manito">-</div>
+                </div>
+                <div class="nombreEquipo">
+                    <p>Equipo 1</p>
+                </div>
+            </div>
+            <div id="div1Derecho">
+                <div class="nombreEquipo">
+                    <p>Equipo 2</p>
+                </div>
+                <div class="cambioDePuntos">
+                    <div class="botonMas manito">+</div>
+                    <div class="botonMenos manito">-</div>
+                </div>
+            </div>
+
+        </div>
+        <div id="div2">
+            <div id="div2Izquierdo">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 5 puntos de truco" id="f1c1">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 5 puntos de truco" id="f2c1">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 5 puntos de truco" id="f3c1">
+            </div>
+            <div id="div2Derecho">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 5 puntos de truco" id="f1c2">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 5 puntos de truco" id="f2c2">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 5 puntos de truco" id="f3c2">
+            </div>
+
+        </div>
+        <div id="div3">
+            <div id="div3Izquierdo">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 0 puntos de truco" id="f4c1">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 0 puntos de truco" id="f5c1">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 0 puntos de truco" id="f6c1">
+            </div>
+            <div id="div3Derecho">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 0 puntos de truco" id="f4c2">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 0 puntos de truco" id="f5c2">
+                <img src="img/fosforos/0.png" alt="Fósforos indicando 0 puntos de truco" id="f6c2">
+            </div>
+
+        </div>
+        <div id="div4">
+            <p>Partida a 30 puntos</p>
+        </div>
+        <div id="div5">
+            <div id="puntajeIzquierdo">
+                <p>0</p>
+
+            </div>
+            <div id="botonFin">
+                <input type="button" value="FIN" class="manito">
+
+            </div>
+            <div id="puntajeDerecho">
+                <p>0</p>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <div id="pantallaFin">
+        <div id="ventana">
+            <div id="ventanaSuperior">
+                <p>¿Reiniciar la partida o crear una nueva?</p>
+            </div>
+            <div id="ventanaInferior">
+                <input type="button" value="Reiniciar" id="reiniciarPartida" class="manito">
+                <input type="button" value="Nueva partida" id="nuevaPartida" class="manito">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
